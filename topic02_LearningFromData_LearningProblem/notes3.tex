@@ -147,10 +147,10 @@ which are more concrete and easier to understand.
     The pseudo-code is shown below:
     \begin{lstlisting}
     g = None
-    g_score = -infinity
+    g_score = infinity
     for h in H:
         h_score = E_in(h)
-        if h_score > g_score:
+        if h_score < g_score:
             g = h
             g_score = h_score
     \end{lstlisting}
